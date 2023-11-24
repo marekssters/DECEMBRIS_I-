@@ -1,0 +1,9 @@
+# Inicializējam sākuma skaitli
+skaitlis = 1
+
+# Izmantojam while ciklu, lai atrastu pirmo skaitli, kura kvadrāts nav lielāks par 10
+while skaitlis ** 2 <= 1000:
+    skaitli += 1
+
+# Izvadām rezultātu
+print(f"Pirmais skaitlis, kura kvadrāts nav lielāks par 1000, ir: {skaitlis}")

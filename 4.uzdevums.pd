@@ -1,0 +1,15 @@
+# Pārbaudam, vai ievadītais skaitlis ir negatīvs
+if ievaditais_skaitlis < 0:
+    print("Faktoriāls nav definēts negatīviem skaitļiem.")
+elif ievaditais_skaitlis == 0:
+    print("Faktoriāls no 0 ir 1.")
+else:
+    # Inicializējam faktoriālu ar vērtību 1
+    faktorials = 1
+
+    # Izmantojam for ciklu, lai aprēķinātu faktoriālu
+    for skaitlis in range(1, ievaditais_skaitlis + 1):
+        faktorials *= skaitlis
+
+    # Izvadām rezultātu
+    print(f"Faktoriāls no {ievaditais_skaitlis} ir: {faktorials}")

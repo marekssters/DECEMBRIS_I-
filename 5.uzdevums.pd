@@ -1,0 +1,11 @@
+import datetime
+
+# Iegūstam pašreizējo stundu
+pašreizējā_stunda = datetime.datetime.now().hour
+
+# Atkarībā no pašreizējās stundas izvadam atbilstošu sveicienu
+if 5 <= pašreizējā_stunda < 12:
+    sveiciens = "Labrīt!
+
+# Izvadam sveicienu
+print(sveiciens)
