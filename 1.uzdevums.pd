@@ -1,0 +1,16 @@
+# Lietotājs ievada skaitli
+ievaditais_skaitlis = int(input("Ievadiet skaitli: "))
+
+# Pārbaudam, vai ievadītais skaitlis ir pozitīvs
+if ievaditais_skaitlis <= 0:
+    print("Lūdzu ievadiet pozitīvu skaitli.")
+else:
+    # Inicializējam summu
+    summa = 0
+
+    # Izmantojam for ciklu, lai saskaitītu skaitļus no 1 līdz ievadītajam skaitlim
+    for skaitlis in range(1, ievaditais_skaitlis + 1):
+        summa += skaitlis
+
+    # Izvadām rezultātu
+    print(f"Summa no 1 līdz {ievaditais_skaitlis} ir: {summa}")
